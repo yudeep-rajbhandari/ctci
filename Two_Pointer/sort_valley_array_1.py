@@ -33,7 +33,6 @@ def sort_valley_array_1(arr):
             finalArr[i] = arr[r]
             r -=1
             i-=1
-    print(l)
     finalArr[0] = arr[l]
     return finalArr
 
