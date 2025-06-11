@@ -22,13 +22,13 @@ def run_tests():
 
   tests = [
       # Example 1 from the book
-    #   ([1, 7, 2, 3, 3, 5, 3], 4),
+      ([1, 7, 2, 3, 3, 5, 3], 4),
     #   # Example 2 from the book
-    #   ([1, 7, 2, 3, 3, 5, 3], 3),
+      ([1, 7, 2, 3, 3, 5, 3], 3),
     #   # Additional test cases
-    #   ([], 1),
-    #   ([1], 1),
-    #   ([1, 2], 1),
+      ([], 1),
+      ([1], 1),
+      ([1, 2], 1),
       ([2, 1], 1),
     #   ([3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5], 4),
   ]
@@ -39,7 +39,7 @@ def run_tests():
         f"\npartition({arr}, {pivot}): got: {arr_copy}\n"
 
 def partition(arr,pivot):
-    l , r = 0, 0
+    s , w = 0, 0
     while(s < len(arr)):
         keep =  s == 0 or (arr[s] <= pivot and arr[s-1] > pivot)
         if(keep):
